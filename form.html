@@ -11,6 +11,31 @@
     <title>Discover Form</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span></button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <a class="nav-link" href="index_product.html">Product</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="index_engineer.html">Engineering</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="index_security.html">Security</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="index_contact.html">Contact<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
     <div class="container">
       <h1>Discover a career in Technology!</h1>
         <p>Fill out this survey to find your suggested tech career path.</p>
@@ -59,7 +84,7 @@
                 <option value="4">3 +</option>
               </select>
           </div>
-          <div class="form-group words">
+          <div class="form-group words" id="words">
             <label for="words">Which of the following words best describe you?</label>
             <p></p>
             <input type="checkbox" name="words" value="4"> Passionate</br>
@@ -89,7 +114,8 @@
           <button type="submit" class="btn" data-toggle="modal" data-target="#exampleModalCenter">Generate results</button>
         </form>
       </div>
-      <!-- <div class="container-results">
+<!-- 93-102 are hidden just for the sake of building out result HTML -->
+      <div class="container-results">
         <div class="modal" tabindex="-1" role="dialog" id="exampleModalCenter">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -98,28 +124,63 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-              </div> -->
+              </div>
               <div class="modal-body">
                 <div id="result-product">
                   <h1>Product</h1>
                   <img src="img/pika.jpg" alt="An animated character with yellow fur, vampire vangs, and a cape" width="400" class="center">
-                    <p>JavaScript Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>You would thrive in Product!</p>
+                    <ul>
+                      <li>Know how to run good meetings</li>
+                      <li>Understand code</li>
+                      <li>Know how to sell (to engineers)</li>
+                      <li>Be able to support others</li>
+                      <li>Have a solid understanding of “street statistics”</li>
+                      <li>Take time to talk to customers</li>
+                      <li>Have a way with words</li>
+                      <li>Manage your time</li>
+                      <li>Know when to delegate</li>
+                      <li>Don't be ashamed to admit what you don't know</li>
+                    </ul>
                 </div>
                 <div id="result-engineer">
                   <h1>Engineering</h1>
                   <img src="img/squir.jpg" alt="A blue animated turtle with mummy wraps" width="400" class="center">
-                    <p>Ruby Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>You would thrive in Engineering!</p>
+                    <ul>
+                      <li>Analytical & problem solving skills</li>
+                      <li>Ability to learn quickly</li>
+                      <li>Team player</li>
+                      <li>Written and verbal communication</li>
+                      <li>Customer-oriented</li>
+                      <li>Analysis</li>
+                      <li>General programming skills</li>
+                      <li>Software debugging</li>
+                      <li>Software testing</li>
+                      <li>Software development fundamentals & process</li>
+                    </ul>
                 </div>
                 <div id="result-security">
                   <h1>Security</h1>
                   <img src="img/char.jpg" alt="An orange animated dinosaur with a frankenstein costume" width="400" class="center">
-                  <p>Python Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>You would thrive in Security!</p>
+                  <ul>
+                    <li>Enterprise firewall</li>
+                    <li>Communication skills</li>
+                    <li>Adaptability</li>
+                    <li>Problem-solving</li>
+                    <li>Thrive under pressure</li>
+                    <li>Strong multitaskers</li>
+                    <li>Well organized</li>
+                    <li>Research</li>
+                    <li>Team collaboration</li>
+                    <li>Innovative thinker</li>
+                  </ul>
                 </div>
-              </div>
-
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Learn More</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Learn More</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
           </div>
