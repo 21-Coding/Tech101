@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Discover a career in Tech!</h1>
+      <h1>Discover a career in Technology!</h1>
         <p>Fill out this survey to find your suggested tech career path.</p>
       <div id="blanks">
         <form>
@@ -27,7 +27,7 @@
                 <option value="0">High School</option>
                 <option value="0">Some College</option>
                 <option value="2">Bachelor's Degree</option>
-                <option value=4>Master's Degree</option>
+                <option value="4">Master's Degree</option>
                 <option value="2">Certification</option>
                 <option value="4">Other</option>
               </select>
@@ -54,15 +54,42 @@
             <label for="career-change">How many times did you change your mind about your career before you figured out what you really wanted to do?</label>
               <select class="form-control" id="career-change">
                 <option></option>
-                <option value="0">Never</option>
-                <option value="2">1-2</option>
-                <option value="4">3+</option>
+                <option value="0">0</option>
+                <option value="2">1 - 2</option>
+                <option value="4">3 +</option>
               </select>
           </div>
-          <button type="submit" class="btn" data-toggle="modal" data-target="#exampleModalCenter">Click to here if you're ready to learn!</button>
+          <div class="form-group words">
+            <label for="words">Which of the following words best describe you?</label>
+            <p></p>
+            <input type="checkbox" name="words" value="4"> Passionate</br>
+            <input type="checkbox" name="words" value="6"> Assertive</br>
+            <input type="checkbox" name="words" value="2"> Thoughtful</br>
+            <input type="checkbox" name="words" value="2"> Logical</br>
+            <input type="checkbox" name="words" value="4"> Careless</br>
+            <input type="checkbox" name="words" value="4"> Analytical</br>
+            <input type="checkbox" name="words" value="2"> Empathetic</br>
+            <input type="checkbox" name="words" value="6"> Intuative</br>
+            <input type="checkbox" name="words" value="6"> Agressive</br>
+            <input type="checkbox" name="words" value="2"> Dynamic</br>
+          </div>
+          <div class="form-group stress-level">
+            <label for="stress">How well do you handle stress?</label>
+              <select class="form-control" id="stress-level">
+                <option></option>
+                <option value="4">Not so good</option>
+                <option value="2">Meh, I'm okay</option>
+                <option value="6">Stress is my fuel</option>
+              </select>
+          </div>
+          <div class="form-group path-walk">
+            <label class="control-label" for="path-walk">You are walking down a path to somewhere important, but a wall blocks your path, how do you get past it?</label>
+            <input type="text" class="form-control" id="path-walk">
+          </div>
+          <button type="submit" class="btn" data-toggle="modal" data-target="#exampleModalCenter">Generate results</button>
         </form>
       </div>
-      <div class="container-results">
+      <!-- <div class="container-results">
         <div class="modal" tabindex="-1" role="dialog" id="exampleModalCenter">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -71,25 +98,27 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-              </div>
+              </div> -->
               <div class="modal-body">
                 <div id="result-product">
                   <h1>Product</h1>
-                  <img src="img/js.jpg" alt="A yellow background with an icon of a computer with Java Script text" width="400" class="center">
+                  <img src="img/pika.jpg" alt="An animated character with yellow fur, vampire vangs, and a cape" width="400" class="center">
                     <p>JavaScript Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
                 <div id="result-engineer">
                   <h1>Engineering</h1>
-                  <img src="img/ruby.jpg" alt="A red background with an icon of a computer with Ruby text" width="400" class="center">
+                  <img src="img/squir.jpg" alt="A blue animated turtle with mummy wraps" width="400" class="center">
                     <p>Ruby Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
                 <div id="result-security">
                   <h1>Security</h1>
-                  <img src="img/python.jpg" alt="A blue background with an icon of a computer with Python text" width="400" class="center">
+                  <img src="img/char.jpg" alt="An orange animated dinosaur with a frankenstein costume" width="400" class="center">
                   <p>Python Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
               </div>
+
               <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Learn More</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div>
