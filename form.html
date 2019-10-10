@@ -53,68 +53,69 @@
                 <option value="0">Some College</option>
                 <option value="2">Bachelor's Degree</option>
                 <option value="4">Master's Degree</option>
-                <option value="2">Certification</option>
-                <option value="4">Other</option>
+                <option value="6">Certification</option>
+                <option value="8">Other</option>
               </select>
           </div>
           <div class="form-group skill-level">
             <label for="skill">Langauge Skill Level</label>
               <select class="form-control" id="skill">
                 <option></option>
-                <option value="0">Beginner</option>
-                <option value="2">Intermediate</option>
-                <option value="4">Advanced</option>
+                <option value="2">Beginner</option>
+                <option value="4">Intermediate</option>
+                <option value="6">Advanced</option>
               </select>
           </div>
           <div class="form-group career-interest">
             <label for="career">Career Interest</label>
               <select class="form-control" id="career">
                 <option></option>
-                <option value="0">Product</option>
-                <option value="2">Engineering</option>
-                <option value="4">Security</option>
+                <option value="2">Product</option>
+                <option value="4">Engineering</option>
+                <option value="6">Security</option>
               </select>
           </div>
           <div class="form-group career-change">
             <label for="career-change">How many times did you change your mind about your career before you figured out what you really wanted to do?</label>
               <select class="form-control" id="career-change">
                 <option></option>
-                <option value="0">0</option>
-                <option value="2">1 - 2</option>
-                <option value="4">3 +</option>
+                <option value="2">0</option>
+                <option value="4">1 - 2</option>
+                <option value="6">3 +</option>
               </select>
           </div>
           <div class="form-group words" id="words">
             <label for="words">Which of the following words best describe you?</label>
             <p></p>
-            <input type="checkbox" name="words" value="4"> Passionate</br>
-            <input type="checkbox" name="words" value="6"> Assertive</br>
-            <input type="checkbox" name="words" value="2"> Thoughtful</br>
-            <input type="checkbox" name="words" value="2"> Logical</br>
+            <input type="checkbox" name="words" value="0"> Passionate</br>
+            <input type="checkbox" name="words" value="2"> Assertive</br>
+            <input type="checkbox" name="words" value="4"> Thoughtful</br>
+            <input type="checkbox" name="words" value="6"> Logical</br>
             <input type="checkbox" name="words" value="4"> Careless</br>
             <input type="checkbox" name="words" value="4"> Analytical</br>
-            <input type="checkbox" name="words" value="2"> Empathetic</br>
-            <input type="checkbox" name="words" value="6"> Intuative</br>
-            <input type="checkbox" name="words" value="6"> Agressive</br>
-            <input type="checkbox" name="words" value="2"> Dynamic</br>
+            <input type="checkbox" name="words" value="6"> Empathetic</br>
+            <input type="checkbox" name="words" value="2"> Intuitive</br>
+            <input type="checkbox" name="words" value="4"> Agressive</br>
+            <input type="checkbox" name="words" value="6"> Dynamic</br>
           </div>
           <div class="form-group stress-level">
             <label for="stress">How well do you handle stress?</label>
-              <select class="form-control" id="stress-level">
+              <select class="form-control" id="stressLevel">
                 <option></option>
-                <option value="4">Not so good</option>
-                <option value="2">Meh, I'm okay</option>
+                <option value="2">Not so good</option>
+                <option value="4">Meh, I'm okay</option>
                 <option value="6">Stress is my fuel</option>
               </select>
           </div>
-          <div class="form-group path-walk">
-            <label class="control-label" for="path-walk">You are walking down a path to somewhere important, but a wall blocks your path, how do you get past it?</label>
-            <input type="text" class="form-control" id="path-walk">
-          </div>
-          <button type="submit" class="btn" data-toggle="modal" data-target="#exampleModalCenter">Generate results</button>
+
+          <button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter">Generate results</button>
         </form>
       </div>
-<!-- 93-102 are hidden just for the sake of building out result HTML -->
+
+
+
+
+
       <div class="container-results">
         <div class="modal" tabindex="-1" role="dialog" id="exampleModalCenter">
           <div class="modal-dialog" role="document">
@@ -178,8 +179,8 @@
                   </ul>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Learn More</button>
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-warning" data-dismiss="modal">Learn More</button>
+                  <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
